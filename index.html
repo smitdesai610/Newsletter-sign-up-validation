@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Newsletter sign-up form</title>
+  </head>
+  <body class="bg-charcoal-grey flex justify-center items-center">
+    <main class="newsletter bg-white rounded-2xl sm:p-4 text-charcoal-grey flex flex-col-reverse sm:flex-row sm:h-[400px] 2xl:h-[800px]">
+      <div class="stay-update self-center px-10 py-10 sm:py-0 w-[400px] 2xl:w-[600px]">
+        <div class="title font-bold text-4xl text-center mb-5">Stay updated!</div>
+        <div class="sub-title text-sm mb-5">Join 60,000+ product managers receiving monthly updates on:</div>
+        <div class="points mb-5">
+          <div class="point flex gap-2 items-center my-2">
+            <div class="points-icon shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            <div class="points-title text-sm">Product discovery and building what matters</div>
+          </div>
+          <div class="point flex gap-2 items-center my-2">
+            <div class="points-icon shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            <div class="points-title text-sm">Measuring to ensure updates are a success</div>
+          </div>
+          <div class="point flex gap-2 items-center my-2">
+            <div class="points-icon shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            </div>
+            <div class="points-title text-sm">And much more!</div>
+          </div>
+        </div>
+        <form action="./success.html" id="subscriptionForm" class="email">
+          <div class="email-section flex flex-col">
+            <div class="email-title flex justify-between">
+              <label for="email" class="text-xs font-bold mb-2">Email address</label>
+              <span id="emailError" class="text-red-500 text-xs mb-2 hidden">Valid email required</span>
+            </div>
+            <input type="email" id="email" name="email" placeholder="email@company.com" value="" class="text-black border rounded-md border-black cursor-pointer py-2 px-3 text-sm mb-5">
+            <button type="submit" id="submit" class="bg-charcoal-grey hover:bg-gradient-hover text-white text-sm font-bold py-2 rounded-md transition duration-300 ease-in-out">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </div>
+      <picture class="stay-update-image">
+        <source media="max-width:640px" srcset="./images/illustration-sign-up-mobile.svg">
+        <img src="./images/illustration-sign-up-desktop.svg" class="rounded-lg w-full h-full object-cover"
+        alt="side image">
+     </picture>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

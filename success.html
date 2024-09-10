@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Newsletter sign-up form</title>
+  </head>
+  <body class="bg-charcoal-grey flex justify-center items-center">
+    <main class="bg-white rounded-2xl p-8 w-72 text-charcoal-grey">
+        <div class="success-message">
+            <div class="success-icon mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg></div>
+            <div class="title font-bold text-4xl text-left mb-4">Thanks for subscribing!</div>
+            <div class="sub-title text-xs mb-4"> A confirmation email has been sent to <strong id="subscriberEmail"></strong>. Please open it and click the button inside to confirm your subscription.</div>
+            <button type="submit" id="dismissbtn" onclick="redirectPage()" class="bg-charcoal-grey hover:bg-gradient-hover w-full text-white text-xs font-bold py-2 rounded-md transition duration-300 ease-in-out">Dismiss message</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
